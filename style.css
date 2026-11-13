@@ -1,0 +1,156 @@
+/* General Page Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0b0d12;
+  color: #e2e8f0;
+  line-height: 1.6;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #00439c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ul li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+ul li a:hover {
+  background-color: #1e293b;
+  color: #38bdf8;
+}
+
+ul li a.active {
+  background-color: #0070d1; /* PlayStation Blue */
+  color: white;
+}
+
+/* Main Sony Header Section */
+body > h1 {
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+/* Styling your custom <n> tags like paragraphs */
+n {
+  display: block;
+  max-width: 700px;
+  margin: 15px auto 30px auto;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  padding: 0 20px;
+}
+
+/* Top Category Tags (h2 - h6 directly inside body) */
+body > h2,
+body > h3,
+body > h4,
+body > h5,
+body > h6 {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #38bdf8;
+  padding: 8px 18px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #334155;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  width: 480px;
+  height: auto;
+  border-radius: 12px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Product Cards (Your 3 Divs) */
+#playstationdiv,
+#sonyphonediv,
+#sonycameradiv {
+  max-width: 850px;
+  margin: 45px auto;
+  padding: 40px 30px;
+  border-radius: 16px;
+  background: #131722;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #1e293b;
+}
+
+/* Individual Card Accents */
+#playstationdiv {
+  border-top: 5px solid #0070d1; /* PlayStation Blue */
+}
+
+#sonyphonediv {
+  border-top: 5px solid #8b5cf6; /* Xperia Purple */
+}
+
+#sonycameradiv {
+  border-top: 5px solid #f97316; /* Sony Alpha Orange */
+}
+
+/* Headings inside the Product Cards */
+div h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+div h2,
+div h3,
+div h4 {
+  display: inline-block;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 14px;
+  margin: 5px;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-weight: 600;
+}
